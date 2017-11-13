@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bed Remote</string>
+
+    <string name="navigation_drawer_open">Navigation drawer open</string>
+    <string name="navigation_drawer_close">Navigation drawer close</string>
+    <string name="without_wifi">Not connected to a WiFi network</string>
+    <string name="without_remote">You can\'t use your PC from bed</string>
+    <string name="with_wifi">Connected to </string>
+    <string name="with_remote">You can use your PC from bed</string>
+
+</resources>

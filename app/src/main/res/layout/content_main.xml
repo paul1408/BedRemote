@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.paul.studioz.wakeup.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="@color/colorCard"
+                card_view:cardCornerRadius="4dp">
+
+                <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/img_wifi"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:src="@drawable/ic_network"
+                        app:layout_constraintLeft_toRightOf="parent" />
+
+                    <TextView
+                        android:id="@+id/connection_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="WI-FI connection details"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@id/img_wifi"
+                        app:layout_constraintLeft_toRightOf="@id/img_wifi" />
+
+                    <Button
+                        android:id="@+id/wifi_toggle_btn"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Enable"
+                        app:layout_constraintTop_toBottomOf="@id/img_wifi" />
+
+                    <Button
+                        android:id="@+id/wifi_details_btn"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="scan"
+                        app:layout_constraintBaseline_toBaselineOf="@id/wifi_toggle_btn"
+                        app:layout_constraintLeft_toRightOf="@id/wifi_toggle_btn" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

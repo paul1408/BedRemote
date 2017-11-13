@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/devices_group">
+
+        <item
+            android:id="@+id/nav_devices"
+            android:title="Saved devices" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:enabled="false"
+            android:title="No favorite devices" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/settings_group">
+            <item
+                android:id="@+id/nav_settings"
+                android:title="Settings" />
+            <item
+            android:id="@+id/nav_help"
+            android:title="Help" />
+            <item
+                android:id="@+id/nav_about"
+                android:title="About" />
+    </group>
+
+</menu>
+
+    <!--android:icon="@drawable/ic_menu_camera"-->
